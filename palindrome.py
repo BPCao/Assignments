@@ -1,6 +1,7 @@
 def palindrome():
     empty = ''
     word = input("Please enter a word: ")
+    word = word.lower()
     reverse = len(word) - 1
     while reverse >= 0:
         empty = empty + word[reverse]
