@@ -1,11 +1,13 @@
 
-def pyramid():
-    print ('*')
-    counter = 0
-    star = 1
-    while counter < 9:
-        print ('*' * (star + 2))
-        counter += 1
-        star += 2
+def pyramid(n):
+        k = 2 * n - 2
+        for i in range(0, n): 
+                for j in range(0, k): 
+                        print(end=" ")
+                k -= 1
+                for j in range(0, i+1):
+                        print("* ", end="")
+                print("\r")             
 
-pyramid()
+n = 17
+pyramid(n)
