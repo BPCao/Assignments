@@ -3,6 +3,7 @@ from datetime import datetime
 table_lst = []
 choice = ""
 time = datetime.now()
+table_dict = []
 
 
 class Table:
@@ -27,8 +28,9 @@ class Table:
         self.playtime = self.time_end - self.time_start
         self.record = {"Table Number": self.number, "Time Start": str(self.time_start),
                        "Time End": str(self.time_end), "Total Playtime": str(self.playtime)}
-        with open(f"{self.date}.json", "a") as table_record:
-            json.dump(self.record, table_record)
+        table_dict.append(self.record)
+        with open(f"{self.date}.json", "w") as table_record:
+            json.dump(table_dict, table_record, indent=2)
             print(self.record)
 
 
