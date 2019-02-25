@@ -4,6 +4,8 @@ def factorial():
     while user_number > 0:
         total = total * user_number
         user_number = user_number - 1
-    print (total)    
+    print(total)
 
+
+PRINT
 factorial()
