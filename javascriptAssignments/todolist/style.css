@@ -1,0 +1,15 @@
+.stylish {
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.reallystylish {
+    display: flex;
+    background-color: green;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
