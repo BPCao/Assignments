@@ -8,16 +8,14 @@ all.addEventListener('click', function () {
 
     let dishList = dishes.map(function (dish) {
 
-        return `<li><h3>${dish.title}</h3>
+        return `<li class="bullet"><h3>${dish.title}</h3>
             <p>${dish.description}</p>
-            <p>${dish.price}</p>
+            <p>$${dish.price}</p>
             <img src="${dish['imageURL']}">
             </li>`
     })
 
-    console.log(dishList)
-
-    menu.innerHTML = dishList
+    menu.innerHTML = dishList.join('')
 
 })
 
@@ -29,14 +27,14 @@ starterbtn.addEventListener('click', function () {
 
     let startlst = startfilter.map(function (dish) {
 
-        return `<li><h3>${dish.title}</h3>
+        return `<li class="bullet"><h3>${dish.title}</h3>
             <p>${dish.description}</p>
-            <p>${dish.price}</p>
+            <p>$${dish.price}</p>
             <img src="${dish['imageURL']}">
             </li>`
     });
 
-    menu.innerHTML = startlst
+    menu.innerHTML = startlst.join('')
 
 })
 
@@ -48,14 +46,14 @@ entreebtn.addEventListener('click', function () {
 
     let entreelst = entreefilter.map(function (dish) {
 
-        return `<li><h3>${dish.title}</h3>
+        return `<li class="bullet"><h3>${dish.title}</h3>
             <p>${dish.description}</p>
-            <p>${dish.price}</p>
+            <p>$${dish.price}</p>
             <img src="${dish['imageURL']}">
             </li>`
     });
 
-    menu.innerHTML = entreelst
+    menu.innerHTML = entreelst.join('')
 
 })
 
@@ -67,14 +65,14 @@ dessertbtn.addEventListener('click', function () {
 
     let dessertlst = dessertfilter.map(function (dish) {
 
-        return `<li><h3>${dish.title}</h3>
+        return `<li class="bullet"><h3>${dish.title}</h3>
             <p>${dish.description}</p>
-            <p>${dish.price}</p>
+            <p>$${dish.price}</p>
             <img src="${dish['imageURL']}">
             </li>`
     });
 
-    menu.innerHTML = dessertlst
+    menu.innerHTML = dessertlst.join('')
 
 })
 
