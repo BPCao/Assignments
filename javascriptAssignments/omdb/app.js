@@ -10,12 +10,8 @@ btnFetchMovie.addEventListener('click', function () {
     request.send();
     request.onload = function () {
         if (request.status != 200) {
-            // console.log("Server not found.");
         }
         else {
-            // console.log("Response Recieved");
-            // console.log(request.responseText);
-            // console.log(JSON.parse(request.responseText));
             let moviesResponse = JSON.parse(request.responseText);
             displayMovies(moviesResponse);
         }
@@ -43,12 +39,9 @@ function getMovieDetails(imdbID) {
             console.log("Server not found.");
         }
         else {
-            // console.log("Response Recieved");
-            // console.log(request.responseText);
-            console.log(JSON.parse(request.responseText))
             let detailsResponse = JSON.parse(request.responseText)
             let itemDetails = displayMovieDetails(detailsResponse)
-            batmanDetails.innerHTML = itemDetails.join('')
+            batmanDetails.innerHTML = itemDetails
         };
     };
 }
