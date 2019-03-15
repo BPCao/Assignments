@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input id="storeSelect" type="text" placeholder="Store Name">
+    <button type="button" id="submit">Submit</button>
+    <ul id="storeList"></ul>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBQuYtXPv2q_Sj9nINE2Klm7p8Xv2NHtfM",
+            authDomain: "grocerystore2.firebaseapp.com",
+            databaseURL: "https://grocerystore2.firebaseio.com",
+            projectId: "grocerystore2",
+            storageBucket: "grocerystore2.appspot.com",
+            messagingSenderId: "14778674232"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

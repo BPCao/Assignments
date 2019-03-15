@@ -1,0 +1,8 @@
+#storeList {
+    list-style: none;
+}
+
+div {
+    display: flex;
+    justify-content: flex-start; 
+}

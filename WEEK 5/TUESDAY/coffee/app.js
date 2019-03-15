@@ -25,11 +25,11 @@ showAll.addEventListener('click', function() {
     })
     .then(function (json) {
         console.log(Object.keys(json))
-    let keys = Object.keys(json)
+        let keys = Object.keys(json)
         console.log(keys)
-    let orders = keys.map(function (key) {
+        let orders = keys.map(function (key) {
         // console.log(json[key])
-        return `<li>
+            return `<li>
                     <div class="orderBox">
                         <p>email: ${json[key].emailAddress}:</p>
                         <span>Order: ${json[key].coffee}</span>

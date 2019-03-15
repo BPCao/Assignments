@@ -1,2 +1,0 @@
-So far, the things I've learned in this Boot Camp have primarily been symtax,
-keyword application, and github familiarization.
