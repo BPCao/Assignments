@@ -30,15 +30,15 @@ groceryStores.on('value', function (snapshot) {
     storeList.innerHTML = storeItems.join("")
 })
 
-// deleteStore.addEventListener('click', function () {
-//     storeArray.map((store) => {
-//         if (storeSelect.value == store) {
-//             store.remove()
-//             console.log(store.Store)
-//         return storeArray    
-//         }
-//     })
-// })
+deleteStore.addEventListener('click', function () {
+    groceryStores.map((store) => {
+        if (storeSelect.value == store) {
+            store.remove()
+            console.log(store.Store)
+        return storeArray    
+        }
+    })
+})
 
 
 

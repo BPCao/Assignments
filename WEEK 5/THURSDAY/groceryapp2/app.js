@@ -38,6 +38,6 @@ function addItem() {
                       <button onclick=delItem()>Remove Item</button>`
 }
 
-function removeItem() {
+function delItem() {
     previousSibling.remove
 }

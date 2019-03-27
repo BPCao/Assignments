@@ -1,0 +1,12 @@
+#loginBox {
+    margin: 10px;
+    width: 30%;
+    background-color: aqua;
+    padding: 10px;  
+}
+
+#formButtons 
+{
+    display: flex;
+    justify-content: space-between;
+}

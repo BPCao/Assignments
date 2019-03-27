@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+
+    <h2>Trips</h2>
+    <ul>
+    {{#tripList}}
+    
+    <li>
+    <span>{{destination}} - {{departure}} - {{returnDate}}  
+        <form action="/deleteTrip" method="POST">
+            <input type="hidden" value="{{tripId}}" name="deleteId"><button type="submit">Delete Trip</button>
+        </form>
+    </span>
+    </li>
+    
+    {{/tripList}}
+    </ul>
+
+</body>
+</html>
