@@ -1,0 +1,16 @@
+<html>
+<body>
+
+    <h1>Welcome to BlogLog!</h1>
+    <form action="/new_post" method="POST">
+    <input type="text" name="newPost" placeholder="Post here...">
+    <button type="Submit">Submit</button>
+    </form>
+
+    <ul>
+    {{#commentsList}}
+    {{/commentsList}}
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+<body>
+
+    <form action="/add-post" method="POST">
+        <input type="text" placeholder="Add text here">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <ul>
+    {{#posts}}
+        <li>{{post}}</li>
+    {{/posts}}
+    </ul>
+
+</body>
+</html>

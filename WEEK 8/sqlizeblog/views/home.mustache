@@ -1,0 +1,33 @@
+<html>
+<body>
+
+    <h1>Welcome to BlogLog!</h1>
+    <form action="/add-post" method="POST">
+    <input type="text" name="title" placeholder="Post title">
+    <input type="text" name="body" placeholder="Post body">
+    <input type="text" name="category" placeholder="Category">
+    <button type="Submit">Submit</button>
+    </form>
+
+    <form action="/filter-posts" method="POST">
+    <input type="text" name="filter" placeholder="Filter by category">
+    <button type="Submit">Filter</button>
+    </form>
+
+    <ul>
+    {{#posts}}
+        <li>
+            <p>{{title}}</p> 
+            <p>{{body}}</p>
+            <p>{{category}}</p>
+            <form action="/delete-post" method="POST">
+            <input type="hidden" name="deleteid" value="{{id}}" />
+            <button type="submit">Delete</button>
+            </form>
+            <a href="/update-post/{{id}}"><button>Edit</button></a>
+            <a href="/comment-post/{{id}}"><button>Comment</button></a>
+        </li>
+    {{/posts}}
+    </ul>
+</body>
+</html>

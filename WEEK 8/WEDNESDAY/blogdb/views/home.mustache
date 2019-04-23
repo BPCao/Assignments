@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<body>
+    <a href="/comments">View Posts</a>
+    <h1>Blogdb</h1>
+    <form action="/add-post" method="POST">
+    <input type="text" name="title" placeholder="Insert title here">
+    <input type="text" name="body" placeholder="Insert post here">
+    <input type="text" name="category" placeholder="Insert tag here">
+    <button type=submit>Submit</button>
+    </form>
+    <br>
+    <br>
+    <ul>
+    {{#posts}}
+        <li style="list-style-type: none;">
+            <p>{{title}}</p>
+            <p>{{body}}</p>
+            <p>{{category}}</p>
+        </li>
+            <a href="/comment-post/{{id}}"><button>Comment</button></a>
+    {{/posts}}
+    </ul>
+
+
+</body>
+</html>

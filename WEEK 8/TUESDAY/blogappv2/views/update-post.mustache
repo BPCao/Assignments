@@ -1,0 +1,24 @@
+<html>
+<body>
+
+    {{> menu}}
+
+    <ul>
+    {{#blogPost}}
+        <li>
+            {{body}}
+            <form action="/delete-post" method="POST">
+            <input type="hidden" name="deleteid" value="{{postid}}" />
+            <button type="submit">Delete</button>
+            </form>
+            <form action="/update-post" method="POST">
+            <input type="text" name="updatebody" placeholder="New Body"/>
+            <input type="hidden" name="updateid" value="{{postid}}" />
+            <button type="submit">Update</button>
+            </form>
+        </li>
+    {{/blogPost}}
+    </ul>
+
+</body>
+</html>

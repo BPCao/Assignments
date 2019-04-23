@@ -1,0 +1,22 @@
+<html>
+<body>
+
+    <h1>Welcome to BlogLog!</h1>
+
+    <ul>
+    {{#posts}}
+        <li>
+            <p>{{title}}</p> 
+            <p>{{body}}</p>
+            <p>{{category}}</p>
+            <form action="/filter-post" method="POST">
+            <input type="hidden" name="deleteid" value="{{id}}" />
+            <button type="submit">Delete</button>
+            </form>
+            <a href="/update-post/{{id}}"><button>Edit</button></a>
+        </li>
+    {{/posts}}
+    </ul>
+
+</body>
+</html>
