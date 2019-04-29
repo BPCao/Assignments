@@ -312,17 +312,17 @@ $(function(){
 --------------------------------------------*/
 
     // initialize text Typer Only in Modern browsers
-    if (animation) {
+    // if (animation) {
 
-      // var text = $('#home .typer-title'),
-          // textOne = "i'm ui/ux designer",
-          // textTwo = "let's work together",
-          // textThree = "i can create awesome stuff";
+    //   var text = $('#home .typer-title'),
+    //       textOne = "i'm ui/ux designer",
+    //       textTwo = "let's work together",
+    //       textThree = "i can create awesome stuff";
 
-          if (!!$.prototype.typer) {
-            // text.typer([textOne,textTwo,textThree]);
-          }
-    }
+    //       if (!!$.prototype.typer) {
+    //         text.typer([textOne,textTwo,textThree]);
+    //       }
+    // }
 
 
 /*----------------------------------------------------------------------
